@@ -4,35 +4,59 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>登录</title>
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        overflow: hidden;
-    }
-    </style>
     <link href="assoc/css/font.css" rel="stylesheet">
     <link rel="stylesheet" href="assoc/css/style.css">
     <link rel="stylesheet" href="assoc/css/style-search.css" media="screen" type="text/css" />
-    
+    <link rel="stylesheet" href="assoc/css/login.css">
 </head>
 
 <body>
-    <canvas id="canvas" width="1280" height="1024"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas>
-    
+    <!-- 文字雨 START -->
+    <!-- <canvas id="canvas" width="1280" height="1024"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas> -->
+    <canvas id="canvas" width="1920" height="1080"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas>
+    <!-- 文字雨 END -->
+    <!-- 登录框 START -->
+    <div class="login-layout">
+        <form action="" class="" method="post">
+            <div class="login-form">
+                <div class="form_content">
+                    <div class="form-title">管理中心</div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <label>用户名</label>
+                            <input type="text" name="username" autocomplete="off" class="input-text" value="" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <label>用户名</label>
+                            <input type="password" name="password" autocomplete="off" class="input-text" value="" placeholder="密  码">
+                        </div>
+                        <div class="form-group">
+                            <label>用户名</label>
+                            <input type="text" name="vertify" id="vertify" autocomplete="off" class="input-text chick_ue" value="" placeholder="验证码">
+                            <img src="" class="chicuele" id="imgVerify" alt="" onclick="fleshVerify()"/>
+                        </div>
+                        <div class="form-group submitDiv">
+                            <input type="button" name="submit" class="sub" value="登录">
+                        </div>
+                    </div>
+                </div>
+                <div id="error" style="position: absolute;left:0px;bottom: 12px;text-align: center;width:441px;">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- 登录框 END -->
+    <!-- 搜索框 START -->
     <p id="offscreen-text" class="offscreen-text"></p>
     <p id="text" class="text"></p>
     <!--<svg id="svg" > </svg>-->
-    <div id="d" class="webdesigntuts-workshop"> 
-		<span>
-			<input class="input" id="input" type="search" placeholder="请输入您要搜索的内容"/>
-			<button onclick="c();">百度一下</button>
-		</span> 
-	</div>
-    
+    <div id="d" class="webdesigntuts-workshop">
+        <span>
+            <input class="input" id="input" type="search" placeholder="请输入您要搜索的内容"/>
+            <button onclick="c();">百度一下</button>
+        </span>
+    </div>
+    <!-- 搜索框 END -->
     <script src="assoc/jquery/jquery-1.10.2.js"></script>
     <script src='assoc/js/index.js'></script>
     <script src="assoc/js/word.js"></script>
@@ -44,6 +68,7 @@
         location.href = "http://www.baidu.com/s?wd=" + $("#input").val();
     }
     </script>
+    <script src="assoc/js/word.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,130 @@
+.login-layout {
+    width: 300px;
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    margin: 0px auto auto 0px;
+    /*background-color: #ffffff; */
+    text-align: left;
+    color: #fff;
+}
+
+.login-form {
+    position: relative;
+    z-index: 9;
+    margin-top: 30px;
+    border: 2px solid #33cc33;
+    border-radius: 10px;
+}
+
+.login-layout .title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.input-text {
+    z-index: 2;
+    font-size: 20px;
+    font-family: helvetica, sans-serif;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    color: #eee;
+    box-shadow: 0px 0px 0px 1px #2868c8;
+    width: 100% height:32px;
+    line-height: 32px;
+}
+
+.formInfo {}
+
+.formInfo .formText {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto 15px auto;
+    width: 90%;
+}
+
+.submitDiv {
+    text-align: center;
+}
+
+.submitDiv .submit_span {}
+
+.submitDic .submit_span input {
+    background: #222;
+    background: -webkit-linear-gradient(#333, #222);
+    background: -moz-linear-gradient(#333, #222);
+    background: -o-linear-gradient(#333, #222);
+    background: -ms-linear-gradient(#333, #222);
+    background: linear-gradient(#333, #222);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-left-color: #000;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 38px;
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 80px;
+}
+
+.submitDic .submit_span input:hover,
+.submitDic .submit_span input:focus {
+    background: #292929;
+    background: -webkit-linear-gradient(#393939, #292929);
+    background: -moz-linear-gradient(#393939, #292929);
+    background: -o-linear-gradient(#393939, #292929);
+    background: -ms-linear-gradient(#393939, #292929);
+    background: linear-gradient(#393939, #292929);
+    color: #5f5;
+    outline: none;
+}
+
+.chick_ue {
+    width: 40%;
+}
+
+.chicuele {
+    cursor: pointer;
+    width: 100px;
+    position: RELATIVE;
+    left: 18px;
+    top: 12px;
+    height: 37px;
+}
+
+
+/*.sub {
+    z-index: 2;
+    height: 26px;
+    width: 100px;
+    box-shadow: 0px 0px 0px 1px #2868c8;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    border: 1px solid #2868c8;
+    border-radius: 6px;
+}*/
+
+.theForm {
+    display: block;
+    margin-top: 0em;
+}
