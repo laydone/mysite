@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>登录</title>
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="assoc/css/style-search.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="assoc/css/login.css">
 </head>
-
 <body>
     <!-- 文字雨 START -->
     <!-- <canvas id="canvas" width="1280" height="1024"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas> -->
@@ -17,26 +15,28 @@
     <!-- 文字雨 END -->
     <!-- 登录框 START -->
     <div class="login-layout">
-        <form action="" class="" method="post">
+        <form action="" class="js_form" method="post">
             <div class="login-form">
-                <div class="form_content">
-                    <div class="form-title">管理中心</div>
+                <div class="form-content">
+                    <div class="form-title">登录</div>
                     <div class="form-info">
                         <div class="form-group">
-                            <label>用户名</label>
-                            <input type="text" name="username" autocomplete="off" class="input-text" value="" placeholder="用户名">
+                            <input type="text" name="username" autocomplete="off" class="input-text" value="" placeholder="用户名/手机号" />
                         </div>
                         <div class="form-group">
-                            <label>用户名</label>
-                            <input type="password" name="password" autocomplete="off" class="input-text" value="" placeholder="密  码">
+                            <input type="password" name="password" autocomplete="off" class="input-text" value="" placeholder="密  码" />
                         </div>
                         <div class="form-group">
-                            <label>用户名</label>
-                            <input type="text" name="vertify" id="vertify" autocomplete="off" class="input-text chick_ue" value="" placeholder="验证码">
-                            <img src="" class="chicuele" id="imgVerify" alt="" onclick="fleshVerify()"/>
+                            <input type="text" name="vertify" autocomplete="off" class="input-text chick_ue js_vertify" value="" placeholder="验证码" />
+                            <button class="chicuele js_send_code" data-url="asdasd" >发送验证码</button>
+                            <!-- <img src="assoc/img/new.png" class="chicuele" alt="" onclick="fleshVerify()"/> -->
                         </div>
-                        <div class="form-group submitDiv">
-                            <input type="button" name="submit" class="sub" value="登录">
+                        <div class="form-group submit-div js_submit">
+                            <button class="sub left js_login" data-url="denglu">登录</button>
+                            <button class="sub right js_register" data-url="register">注册</button>
+                        </div>
+                        <div class="form-group form-link">
+                            <a href="javascript:;">忘记密码?</a>
                         </div>
                     </div>
                 </div>
@@ -46,29 +46,43 @@
         </form>
     </div>
     <!-- 登录框 END -->
+    <!-- <p id="offscreen-text" class="offscreen-text"></p> -->
+    <!-- <p id="text" class="text"></p> -->
+    <!-- <svg id="svg" > </svg> -->
     <!-- 搜索框 START -->
-    <p id="offscreen-text" class="offscreen-text"></p>
-    <p id="text" class="text"></p>
-    <!--<svg id="svg" > </svg>-->
-    <div id="d" class="webdesigntuts-workshop">
+    <!-- <div id="d" class="webdesigntuts-workshop">
         <span>
             <input class="input" id="input" type="search" placeholder="请输入您要搜索的内容"/>
             <button onclick="c();">百度一下</button>
         </span>
-    </div>
+    </div> -->
     <!-- 搜索框 END -->
-    <script src="assoc/jquery/jquery-1.10.2.js"></script>
-    <script src='assoc/js/index.js'></script>
-    <script src="assoc/js/word.js"></script>
-    <script>
+    
+    <!-- <script src='assoc/js/index.js'></script> -->
+    <!-- <script src="assoc/js/word.js"></script> -->
+    <!-- <script>
     function c() {
         var _url = "http://www.baidu.com/s?wd=" + $("#input").val();
         window.open(_url, "_blank");
         return false;
         location.href = "http://www.baidu.com/s?wd=" + $("#input").val();
     }
-    </script>
-    <script src="assoc/js/word.js"></script>
+    </script> -->    
 </body>
+<script src="assoc/jquery/jquery-1.10.2.js"></script>
+<script src="assoc/js/word.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.js_form').on('click', 'button', function(event) {
+            var _this = $(this);
+            var _url = _this.data('url');
+            console.log(_url);
+            if(_this.hasClass('js_register')){ /*判断按钮*/
+                alert('暂未开放注册');
+            }
 
+            return false;
+        });
+    });
+</script>
 </html>
