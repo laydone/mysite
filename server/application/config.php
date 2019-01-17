@@ -15,9 +15,9 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true, /* TODO:上线改为false */
     // 应用Trace
-    'app_trace'              => false,
+	'app_trace'              => true, /* TODO:上线改为false */
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
