@@ -30,3 +30,6 @@
 .submit-div .right{float: right;}
 .form-group.form-link{ height:25px; line-height: 25px; }
 .form-link a{ float: right; font-family: 'Cabin', helvetica, arial, sans-serif;font-size: 13px;font-weight: 400;color: #efe; z-index: 6;  position: relative;}
+
+
+div{position: fixed; top:0;left: 0;bottom: 0;right: 0; height: 100%;width: 100%;}
