@@ -13,5 +13,9 @@ class TestController extends CommonBaseController {
 	public function index(){
 		return $this->fetch();
 	}
+	
+	public function test(){
+		return $this->fetch('a');
+	}
 
 }
