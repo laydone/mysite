@@ -1,0 +1,6 @@
+/.idea
+/.vscode
+/.user.ini
+*.log
+.env
+.DS_Store
