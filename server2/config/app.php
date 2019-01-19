@@ -19,9 +19,9 @@ return [
     // 应用地址
     'app_host'               => '',
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,/* TOOD:部署时,修改为false  */
     // 应用Trace
-    'app_trace'              => false,
+	'app_trace'              => true,/* TOOD:部署时,修改为false  */
     // 是否支持多模块
     'app_multi_module'       => true,
     // 入口自动绑定模块
@@ -47,7 +47,7 @@ return [
     // 应用类库后缀
     'class_suffix'           => false,
     // 控制器类后缀
-    'controller_suffix'      => false,
+    'controller_suffix'      => 'Controller',/* false */
 
     // +----------------------------------------------------------------------
     // | 模块设置
